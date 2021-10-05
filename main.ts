@@ -151,6 +151,7 @@ let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
+tiles.placeOnTile(mySprite, tiles.getTileLocation(7, 7))
 controller.moveSprite(mySprite, 100, 100)
 scene.cameraFollowSprite(mySprite)
 for (let index = 0; index < 6; index++) {
